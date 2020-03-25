@@ -1,11 +1,9 @@
 import { Router } from 'express';
+import NGOController from './controllers/NGOController';
 
 const routes = Router();
 
-routes.get('/test', (request, response) => {
-  console.log(request.body);
-  
-  return response.json();
-});
+routes.get('/ngos', NGOController.index);
+routes.post('/ngos', NGOController.create);
 
 export default routes;
