@@ -1,12 +1,16 @@
-import { Request, Response } from 'express';
+import { Request, Response, request } from 'express';
 import data from '../data/incidents';
 import Incident from '../models/incident';
 
 export default {
   async index(_request: Request, response: Response) {
-    const incidents = await data.getAll();
+    const { page = 1 } = request.query || {};
 
-    response.json(incidents);
+    const count = await data.count();
+    const incidents = await data.getAll(page, 5);
+
+    response.header('X-Total-Items', count.toString());
+    return response.json(incidents);
   },
 
   async create(request: Request, response: Response) {
@@ -30,5 +34,5 @@ export default {
     }
 
     return response.status(204).send();
-  }
+  },
 }

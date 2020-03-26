@@ -1,3 +1,4 @@
+import NGO from './ngo';
 
 export default interface Incident {
   id: number,
@@ -5,4 +6,5 @@ export default interface Incident {
   description: string,
   value: string,
   ngo_id: string,
+  ngo: NGO,
 }
