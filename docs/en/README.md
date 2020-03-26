@@ -1,6 +1,9 @@
 
-<div style="text-align: center; margin: 3rem 0">
-  <h2 style="margin: 0;">Be The Hero</h2>
+<div style="text-align: center; margin: 3rem 0;">
+  <h2 style="margin: 0; font-style: italic;">
+    <small style="font-size: .7em">Be The</small>
+    <span style="color: #dd1e3b;">Hero</span>
+  </h2>
   <p style="margin: 0;">
     A complete application for Non Governamental Organizations (NGOs) 
   </p>
