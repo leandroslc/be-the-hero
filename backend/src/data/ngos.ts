@@ -11,4 +11,11 @@ export default {
   async getAll() {
     return await ngos().select('*') as NGO[];
   },
+
+  async findById(id: string, ...props: string[]) {
+    return await ngos()
+      .where('id', id)
+      .select(props)
+      .first();
+  },
 };

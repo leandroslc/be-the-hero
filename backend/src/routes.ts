@@ -2,8 +2,11 @@ import { Router } from 'express';
 import NGOController from './controllers/NGOController';
 import IncidentController from './controllers/IncidentController';
 import ProfileController from './controllers/ProfileController';
+import SessionController from './controllers/SessionController';
 
 const routes = Router();
+
+routes.post('/sessions', SessionController.create);
 
 routes.get('/ngos', NGOController.index);
 routes.post('/ngos', NGOController.create);
