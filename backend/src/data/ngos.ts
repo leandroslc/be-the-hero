@@ -1,5 +1,5 @@
+import NGO from '@be-the-hero/core/models/ngo';
 import connection from './connection';
-import NGO from '../models/ngo';
 
 const ngos = () => connection('ngos');
 
@@ -16,6 +16,6 @@ export default {
     return await ngos()
       .where('id', id)
       .select(props)
-      .first();
+      .first() as NGO;
   },
 };

@@ -1,6 +1,6 @@
+import Incident from '@be-the-hero/core/models/incident';
+import NGO from '@be-the-hero/core/models/ngo';
 import connection from './connection';
-import Incident from '../models/incident';
-import NGO from '../models/ngo';
 
 const incidents = () => connection('incidents');
 
@@ -41,7 +41,7 @@ export default {
   async getAllFromNGO(ngo: NGO) {
     return await incidents()
       .where('ngo_id', ngo.id)
-      .select('*');
+      .select('*') as Incident[];
   },
 
   async count() {

@@ -1,6 +1,6 @@
 import { Request, Response, request } from 'express';
+import Incident from '@be-the-hero/core/models/incident';
 import data from '../data/incidents';
-import Incident from '../models/incident';
 
 export default {
   async index(_request: Request, response: Response) {

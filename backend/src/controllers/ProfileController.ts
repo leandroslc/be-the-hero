@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
+import NGO from '@be-the-hero/core/models/ngo';
 import incidentsData from '../data/incidents';
-import NGO from '../models/ngo';
 
 export default {
   async index(request: Request, response: Response) {

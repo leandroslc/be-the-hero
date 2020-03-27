@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
+import NGO from '@be-the-hero/core/models/ngo';
 import crypto from 'crypto';
 import data from '../data/ngos';
-import NGO from '../models/ngo';
 
 export default {
   async index(_request: Request, response: Response) {

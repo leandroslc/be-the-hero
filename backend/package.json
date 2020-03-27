@@ -16,6 +16,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@be-the-hero/core": "file:../core",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.3",
     "@types/node": "^13.9.3",

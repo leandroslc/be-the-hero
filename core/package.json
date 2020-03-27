@@ -1,0 +1,9 @@
+{
+  "name": "@be-the-hero/core",
+  "version": "0.1.0",
+  "description": "Be the hero: core",
+  "private": true,
+  "author": "Leandro Silva Luz do Carmo",
+  "license": "MIT",
+  "scripts": {}
+}
