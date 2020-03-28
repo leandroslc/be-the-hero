@@ -1,0 +1,38 @@
+
+.page-aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 0) and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 380px;
+    margin-right: 30px;
+  }
+}
+
+.page-title {
+  margin: 64px 0 32px;
+  font-size: 32px;
+}
+
+.page-text {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 32px;
+}
+
+.page-form {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+  }
+
+  @at-root &-item {
+    margin-bottom: 8px;
+  }
+}

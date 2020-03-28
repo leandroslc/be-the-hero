@@ -1,0 +1,80 @@
+
+.profile-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 32px auto;
+  padding: 32px 14px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+
+  @at-root &-logo {
+    width: auto;
+    height: 64px;
+  }
+
+  @at-root &-text {
+    font-size: 20px;
+    margin-left: 24px;
+  }
+
+  @at-root &-right {
+    margin-left: auto;
+  }
+
+  @at-root &-exit {
+    margin-left: 16px;
+  }
+}
+
+.profile-title {
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+
+.profile-incidents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  list-style: none;
+}
+
+.profile-incident {
+  position: relative;
+  padding: 24px 52px 24px 24px;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  box-shadow: 0 2px 3px var(--color-shadow);
+
+  @at-root &-label {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--text-muted-dark);
+
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+  }
+
+  @at-root &-text {
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--text-muted);
+  }
+
+  @at-root &-remove {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 2px;
+    color: var(--text-muted);
+    background: transparent;
+    border: 0;
+
+    &:hover, &:focus {
+      opacity: .8;
+    }
+  }
+}

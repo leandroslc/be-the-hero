@@ -1,0 +1,9 @@
+{
+  "name": "@be-the-hero/styles",
+  "version": "0.1.0",
+  "description": "Be the hero styles",
+  "private": true,
+  "author": "Leandro Silva Luz do Carmo",
+  "license": "MIT",
+  "scripts": {}
+}

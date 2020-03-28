@@ -1,0 +1,9 @@
+
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  @at-root &-main {
+    flex: 1 0 auto;
+  }
+}
