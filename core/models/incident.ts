@@ -4,7 +4,7 @@ export default interface Incident {
   id: number,
   title: string,
   description: string,
-  value: string,
+  value: number,
   ngo_id: string,
   ngo: NGO,
 }
