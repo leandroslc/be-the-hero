@@ -1,10 +1,10 @@
-import { Request, Response, request } from 'express';
+import { Request, Response } from 'express';
 import Incident from '@be-the-hero/core/models/incident';
 import data from '../data/incidents';
 
 export default {
-  async index(_request: Request, response: Response) {
-    const { page = 1 } = request.query || {};
+  async index(request: Request, response: Response) {
+    const { page } = request.query || { page: 1 };
 
     const count = await data.count();
     const incidents = await data.getAll(page, 5);
