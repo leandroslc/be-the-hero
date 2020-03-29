@@ -8,6 +8,7 @@
 
 .profile-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   @at-root &-logo {
@@ -18,9 +19,11 @@
   @at-root &-text {
     font-size: 20px;
     margin-left: 24px;
+    margin-right: 24px;
   }
 
   @at-root &-right {
+    display: flex;
     margin-left: auto;
   }
 
@@ -77,4 +80,8 @@
       opacity: .8;
     }
   }
+}
+
+.profile-empty {
+  color: var(--text-muted);
 }
