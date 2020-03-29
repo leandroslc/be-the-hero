@@ -4,7 +4,7 @@ import data from '../data/incidents';
 
 export default {
   async index(request: Request, response: Response) {
-    const { page } = request.query || { page: 1 };
+    const { page = 1 } = request.query || {};
 
     const count = await data.count();
     const incidents = await data.getAll(page, 5);
