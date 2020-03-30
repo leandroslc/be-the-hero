@@ -11,5 +11,16 @@ export default {
       directory: `${devDatabaseDirectory}/migrations`,
     },
     useNullAsDefault: true,
-  }
+  },
+
+  test: {
+    client: 'sqlite3',
+    connection: {
+      filename: `${devDatabaseDirectory}/test.sqlite`,
+    },
+    migrations: {
+      directory: `${devDatabaseDirectory}/migrations`,
+    },
+    useNullAsDefault: true,
+  },
 };

@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import NGO from '@be-the-hero/core/models/ngo';
-import crypto from 'crypto';
 import data from '../data/ngos';
+import { generateUniqueId } from '../utils';
 
 export default {
   async index(_request: Request, response: Response) {
@@ -13,7 +13,7 @@ export default {
   async create(request: Request, response: Response) {
     const ngo : NGO = { ...request.body };
 
-    ngo.id = crypto.randomBytes(4).toString("HEX");
+    ngo.id = generateUniqueId();
     
     await data.insert(ngo);
     
