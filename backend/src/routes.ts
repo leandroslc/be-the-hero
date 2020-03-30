@@ -21,7 +21,7 @@ routes.post('/ngos', celebrate({
   [Segments.BODY]: Joi.object().keys({
     name: Joi.string().required(),
     email: Joi.string().required().email(),
-    whatsapp: Joi.string().required().regex(/[0-9\-+\s]+/),
+    whatsapp: Joi.string().required().regex(/^[0-9\-+\s]+$/),
     city: Joi.string().required(),
     uf: Joi.string().required().length(2),
   }),
