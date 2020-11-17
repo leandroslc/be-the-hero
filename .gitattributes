@@ -1,3 +1,4 @@
 * text=auto
+*.png binary
 package-lock.json binary
 yarn.lock binary

@@ -1,29 +1,27 @@
 Não sabe falar inglês? Leia a [versão em português](docs/pt-br/README.md).
 
-<h2 align="center" style="margin: 0; font-style: italic;">
-  <em>
-    <small style="font-size: .7em;">Be the</small>
-    <span style="color: #dd1e3b;">Hero</span>
-  </em>
-</h2>
+<h1 align="center">
+  <em>Be The</em> Hero
+</h1>
 
-<p align="center" style="margin: 0;">
-  A complete application for Non Governamental Organizations (NGOs)
-  <br />
-  based on <strong>Semana Omnistack <code>11.0</code></strong> taught by <a href="https://rocketseat.com.br">Rocketseat</a>.
+<p align="center">
+  An application to help manage and solve incidents for Non Governamental Organizations Based on <strong>Semana Omnistack <code>11.0</code></strong> taught by <a href="https://rocketseat.com.br">Rocketseat</a>.
 </p>
 
+<div align="center">
+  <img align="center" src="./docs/home.png" alt="Web app homepage" width="70%" />
+</div>
 
-## Purpose
-This repository was built to practive development of backend _(with express)_, frontend _(with React)_ and mobile _(with React-Native)_, during the Semana Omnistack 11.0.
+## :book: Purpose
+This repository was built to practive development of a backend API _with Node express_, a frontend app _with React_, and a mobile app _with React-Native_.
 
-## With some differences
+## :sparkles: Additional Features
 - All projects were build using [Typescript](https://www.typescriptlang.org/).
 - All styles of the web application were implemented using [Sass](https://sass-lang.com/).
 - The web application design is responsive, using a [Generic First](https://www.smashingmagazine.com/2018/12/generic-css-mobile-first/) approach.
 - The web application theme can be customized using css variables.
 
-## Requirements
+## :gear: Requirements
 You will need [nodejs](https://nodejs.org/) installed and [yarn](https://yarnpkg.com/getting-started).
 
 For the **mobile** app:
@@ -34,7 +32,7 @@ For the **mobile** app:
   IP=192.168.0.1
   ```
 
-## How to run
+## :rocket: How to run
 > Ensure you are running the commands in their corresponding directories.
 
 - **backend**:

@@ -1,27 +1,26 @@
 
-<h2 align="center" style="margin: 0; font-style: italic;">
-  <em>
-    <small style="font-size: .7em;">Be the</small>
-    <span style="color: #dd1e3b;">Hero</span>
-  </em>
-</h2>
+<h1 align="center">
+  <em>Be The</em> Hero
+</h1>
 
-<p align="center" style="margin: 0;">
-  Uma aplicação completa para Organizações Não Governamentais (ONGs)
-  <br />
-  baseado na <strong>Semana Omnistack <code>11.0</code></strong> da <a href="https://rocketseat.com.br">Rocketseat</a>.
+<p align="center">
+  Uma aplicação para ajudar a gerenciar e resolver incidentes de Organizações Não Governamentais (ONGs). Baseado na <strong>Semana Omnistack <code>11.0</code></strong> da <a href="https://rocketseat.com.br">Rocketseat</a>.
 </p>
 
-## Propósito
-Este repositório foi construído para praticar o desenvolvimento do backend _(com express)_, frontend _(com React)_, e mobile _(com React-Native)_, durante a Semana Omnistack 11.0.
+<div align="center">
+  <img align="center" src="../home.png" alt="Página inicial web" width="70%" />
+</div>
 
-## Com algumas diferenças
+## :book: Propósito
+Este repositório foi construído para praticar o desenvolvimento de uma API backend _com express_, uma aplicação frontend _com React_, e uma aplicação mobile _com React-Native_.
+
+## :sparkles: Recursos adicionais
 - Todos os projetos foram desenvolvidos em [Typescript](https://www.typescriptlang.org/).
 - Os estilos da aplicação web foram desenvolvidos usando [Sass](https://sass-lang.com/).
 - O design da aplicação web é responsivo, usando uma abordagem [Generic First](https://www.smashingmagazine.com/2018/12/generic-css-mobile-first/).
 - O tema da aplicação web pode ser personalizado usando variáveis.
 
-## Requisitos
+## :gear: Requisitos
 Você vai precisar do [nodejs](https://nodejs.org/) instalado e do [yarn](https://yarnpkg.com/getting-started).
 
 Para o aplicativo **mobile**:
@@ -32,7 +31,7 @@ Para o aplicativo **mobile**:
   IP=192.168.0.1
   ```
 
-## Como executar
+## :rocket: Como executar
 > Certifique-se de estar dentro do diretório correspondente ao executar os comandos.
 
 - **backend**:
